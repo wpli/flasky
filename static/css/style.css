@@ -15,10 +15,10 @@ h3 a:hover, h4 a:hover      { color: #432165; text-decoration: underline; }
 h1.title                    { width: 560px; }
 h1, h2                      { margin: 10px 0 25px 0; }
 h1                          { font-size: 36px; line-height: 52px; }
-h2                          { font-size: 30px; line-height: 40px; }
+h2                          { font-size: 30px; line-height: 34px; }
 
 /* layout elements */
-div.container               { width: 740px; margin: 48px auto; padding: 0; }
+div.container               { width: 600px; margin: 48px auto; padding: 0; }
 div.header                  { float: left; }
 div.navigation              { float: left; }
 div.navigation a            { text-decoration: none; 
@@ -86,7 +86,7 @@ table.footnote td p     { margin: 0; }
 table.footnote td p + p { margin-top: 15px; }
 
 /* blog overview */
-div.entry-overview                  { margin: 25px 122px 25px 102px; }
+div.entry-overview                  { margin: 25px 30px 25px 30px; }
 div.entry-overview h1,
 div.entry-overview div.summary,
 div.entry-overview div.summary p    { display: inline; line-height: 25px; }
