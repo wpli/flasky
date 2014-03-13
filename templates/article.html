@@ -7,7 +7,32 @@
     <p class=date> {{ article.locale_date }} </p>
     {{ article.content }}
     
-    {% include "twitter.html" %}
+<hr>
+
+<p>
+ {% if article.prev_article %}
+Previous: 
+         <a href="{{ SITEURL }}/{{ article.prev_article.url}}">
+             {{ article.prev_article.title }}
+         </a>
+
+ {% endif %}
+<p>
+ {% if article.next_article %}
+Next: 
+
+         <a href="{{ SITEURL }}/{{ article.next_article.url}}">
+             {{ article.next_article.title }}
+         </a>
+
+ {% endif %}
+
+
+
+
+    
+
+    <!-- {% include "twitter.html" %} -->
     {% if article.tags %}
     <p class=tags>Tags: 
       {% for tag in article.tags %}
